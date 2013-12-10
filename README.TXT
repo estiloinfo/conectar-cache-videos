@@ -1,5 +1,5 @@
 #
-#Cache videos youtube: Versión 1.2
+#Cache videos youtube: Versión 1.3
 #
 
 CONFIGURACION PARA EL CACHE DE VIDEOS DE YOUTUBE
@@ -64,21 +64,17 @@ CONFIGURACION PARA EL CACHE DE VIDEOS DE YOUTUBE
 
 	Para servidores Ubuntu, ejecutamos los siguientes comandos
 
-	# cd /etc/nginx
-	# mv nginx.conf.ubuntu nginx.conf
 	# mkdir -p /var/share/videocache/files
 	# mkdir -p /var/share/videocache/tmp
 	# chown www-data /var/share/videocache -R
 
 	Para servidores Debian virtualizados, ejecutamos los siguientes comandos.
 
-	# cd /etc/nginx
-	# mv nginx.conf.debian nginx.conf
 	# mkdir -p /vol/share/videocache/files
 	# mkdir -p /vol/share/videocache/tmp
 	# chown www-data /vol/share/videocache -R
 
-	a) Prueba del servicio
+	c) Prueba del servicio
 
 	En este momento ya tenemos realizada la configuración del aplicativo nginx, 
 	debemos iniciarlo y verificar que no arroje ningún tipo de error, para levantar 
@@ -106,7 +102,7 @@ CONFIGURACION PARA EL CACHE DE VIDEOS DE YOUTUBE
 	Si recibimos este mensaje ya tenemos activo el servicio NGINX.
 
 
-	b) Establecer el nginx como servicio
+	d) Establecer el nginx como servicio
 
 	Para que nginx se ejecute cada vez que se reinicia el servidor debemos 
 	agregarlo como servicio para los cual ejecutaremos el siguiente  comando
