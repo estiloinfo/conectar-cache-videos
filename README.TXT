@@ -1,5 +1,5 @@
 #
-#Cache videos youtube: Versión 1.1	
+#Cache videos youtube: Versión 1.2
 #
 
 CONFIGURACION PARA EL CACHE DE VIDEOS DE YOUTUBE
@@ -132,7 +132,7 @@ CONFIGURACION PARA EL CACHE DE VIDEOS DE YOUTUBE
 	las ACLs y agregamos las siguientes. (Estas directivas se encuentran en el 
 	archivo descargado "squid.acl")
 
-	acl youtube_videos url_regex -i ^http://[^/]+\.youtube\.com/videoplayback\"
+	acl youtube_videos url_regex -i ^http://.*\.(googlevideo|youtube)\.com/videoplayback\?
 	acl range_request req_header Range .
 	acl begin_param url_regex -i ["&]begin=
 	acl id_param url_regex -i ["&]id=
